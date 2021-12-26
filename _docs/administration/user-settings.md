@@ -56,8 +56,8 @@ When selected our support personnel can log into your account, look at running b
 
 {% include image.html
 lightbox="true"
-file="/images/administration/user-settings/allow-support-access.png"
-url="/images/administration/user-settings/allow-support-access.png"
+file="/images/administration/user-settings/user-support-access.png"
+url="/images/administration/user-settings/user-support-access.png"
 alt="Allow access to support"
 caption="Allow access to support"
 max-width="50%"
@@ -77,16 +77,16 @@ file="/images/integrations/api/generate-token.png"
 url="/images/integrations/api/generate-token.png"
 alt="Generate API keys"
 caption="Generate API key"
-max-width="70%"
+max-width="50%"
 %}
 
- {% include image.html
+  {% include image.html
 lightbox="true"
-file="/images/administration/user-settings/user-api-scope.png"
-url="/images/integrations/user-settings/user-api-scope.png"
+file="/images/integrations/api/user-api-scope.png"
+url="/images/integrations/api/user-api-scope.png"
 alt="Select API key scopes"
 caption="Select API key scopes"
-max-width="70%"
+max-width="50%"
 %}
 
 
