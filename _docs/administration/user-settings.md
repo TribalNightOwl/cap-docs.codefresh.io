@@ -52,7 +52,7 @@ When selected, build usage updates sends a weekly summary of your builds across 
 Enabling Codefresh support access to your system is useful to troubleshoot issues you may experience issues with the Codefresh platform.
 When selected our support personnel can log into your account, look at running builds, inspect your docker images, run pipelines, and perform other actions as required. Otherwise, our support staff have **zero visibility** to your account. 
 
-> Important: Codefresh audits all actions performed by Codefresh support on your account. Codefresh *always coordinate with you* prior to taking any action that can impact your system, such as running a pipeline.
+  > Important: Codefresh audits all actions performed by Codefresh support on your account. Codefresh *always coordinate with you* prior to taking any action that can impact your system, such as running a pipeline.
 
 {% include image.html
 lightbox="true"
@@ -68,7 +68,7 @@ max-width="50%"
 
 API keys allow access to Codefresh functionality outside the UI, from scripts or applications, as from the Codefresh command line for example. Generate one or more API keys, and select the scopes for each API key. Once you generate an API key, you can edit the scopes associated with it, and revoke the key.
 
->Tokens are visible only during creation. You cannot "view" an existing token. If you want to re-enable API access for an existing application, you need to delete the old token and create a new one.
+  >Tokens are visible only during creation. You cannot "view" an existing token. If you want to re-enable API access for an existing application, you need to delete the old token and create a new one.
 
 
   {% include image.html
