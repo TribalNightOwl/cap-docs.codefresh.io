@@ -16,23 +16,24 @@ This month's release focuses on key infrastructure enhancements in runtimes.
 We now support the latest Kubernetes server versions, 1.22 and 1.23. 
 
 ##### Ingress controllers
-We are continually extending support for more Ingress controllers, and this release adds support for these Ingress controllers:
+We are continually working on supporting additional Ingress controllers, and this release includes support for four more controllers:
 * Ambassador
 * NGINX Enterprise
 * Istio
 * Traefik
 
-All ingress controllers must be configured to report their status. While Ambassador and Istio are configured by default to report their status, NGINX Enterprise and Traefik must be explicitly configured. For details, check out [Ingress controller requirements]({{site.baseurl}}/docs/runtime/requirements/#ingress-controller).
+All ingress controllers must be configured to report their status. While Ambassador and Istio are configured by default to report their status, NGINX Enterprise and Traefik must be explicitly configured.  
+For details, see [Ingress controller requirements]({{site.baseurl}}/docs/runtime/requirements/#ingress-controller).
 
 
 ##### External cluster support
-Add an external cluster to a CSDP runtime to register it as a managed cluster. External clusters do not have Argo CD installed on them but can be managed by the 
-Managed clusters offer the 
+Argo CD can manage external clusters without Argo CD installed on them. Now you can add, view, and manage remote clusters within CSDP.  
+In CSDP, you simply add an external cluster to a CSDP runtime, and it is automatically registered as a managed cluster. From that point CSDP manages it as it manages the main cluster.  
 
-* Simplified cluster management: A single Argo CD instance can manage multiple clusters in your organization. Unamanging a cluster is as simple as removing it from the runtime list.
-* Robust security: Because not all users require access to managed clusters, it is easier to implement RBAC and other security features.
-* Seamless upgrades: Upgrades to runtimes or to runtime components in the main cluster automatically upgrade managed clusters as well.
-* Integration with CSDP dashboards: Applications dashboards reflect deployment information from all managed clusters.
+With managed clusters in CSDP, you get:
+* Streamlined management: All cluster- and cluster-component level operations are managed through the runtime, in a centralized location. You can install new and uninstall existing components, and remove the cluster from the runtime's managed list.
+* Seamless upgrades: Upgrades to runtimes or to runtime components in the main cluster automatically upgrades those in managed clusters as well.
+* Integration with CSDP dashboards: Applications dashboards reflect deployment information for applications in all managed clusters.
 
 For details, see [Managed clusters]({{site.baseurl}}/docs/runtime/managed-clusters).
 
