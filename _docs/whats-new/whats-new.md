@@ -1,13 +1,46 @@
 ---
-title: "What's New In Codefresh?"
-description: "A changelog of new features"
+title: "What's new in CSDP?"
+description: ""
 group: whats-new
 redirect_from:
   - /docs/whats-new/
 toc: true
 ---
 
-## 2021
+### 2022
+
+#### March 2022
+This month's release focuses on key infrastructure enhancements in runtimes.
+
+##### Kubernetes cluster server version
+We now support the latest Kubernetes server versions, 1.22 and 1.23. 
+
+##### Ingress controllers
+We are continually extending support for more Ingress controllers, and this release adds support for these Ingress controllers:
+* Ambassador
+* NGINX Enterprise
+* Istio
+* Traefik
+
+All ingress controllers must be configured to report their status. While Ambassador and Istio are configured by default to report their status, NGINX Enterprise and Traefik must be explicitly configured. For details, check out [Ingress controller requirements]({{site.baseurl}}/docs/runtime/requirements/#ingress-controller).
+
+
+##### External cluster support
+Add an external cluster to a CSDP runtime to register it as a managed cluster. External clusters do not have Argo CD installed on them but can be managed by the 
+Managed clusters offer the 
+
+* Simplified cluster management: A single Argo CD instance can manage multiple clusters in your organization. Unamanging a cluster is as simple as removing it from the runtime list.
+* Robust security: Because not all users require access to managed clusters, it is easier to implement RBAC and other security features.
+* Seamless upgrades: Upgrades to runtimes or to runtime components in the main cluster automatically upgrade managed clusters as well.
+* Integration with CSDP dashboards: Applications dashboards reflect deployment information from all managed clusters.
+
+For details, see [Managed clusters]({{site.baseurl}}/docs/runtime/managed-clusters).
+
+##### Topology views for runtime
+
+
+
+### 2021
 
 ### November 2021
 
